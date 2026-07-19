@@ -151,13 +151,16 @@ h1 em, h2 em { color: var(--copper); font-weight: 400; }
 .quote-intro > p:not(.kicker) { max-width: 29rem; color: rgba(255,255,255,.7); font-size: .86rem; }
 .direct-contact { display: flex; flex-direction: column; align-items: flex-start; gap: .4rem; margin-top: 3rem; font-size: .75rem; }
 .direct-contact a { border-bottom: 1px solid rgba(255,255,255,.4); }
-.quote-form { align-self: end; padding-top: 3rem; }
-.quote-form label { display: grid; gap: .45rem; margin-bottom: 1.2rem; color: rgba(255,255,255,.72); text-transform: uppercase; letter-spacing: .12em; font-size: .55rem; }
+.quote-form { align-self: end; padding: clamp(1.35rem, 3vw, 2.25rem); background: rgba(25,21,17,.14); border: 1px solid rgba(255,255,255,.18); }
+.quote-form label { display: grid; gap: .55rem; margin-bottom: 1rem; color: rgba(255,255,255,.86); text-transform: uppercase; letter-spacing: .12em; font-size: .58rem; font-weight: 600; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
-.quote-form input, .quote-form select, .quote-form textarea { width: 100%; color: white; background: transparent; border: 0; border-bottom: 1px solid rgba(255,255,255,.38); border-radius: 0; outline: 0; padding: .75rem .1rem; text-transform: none; letter-spacing: 0; resize: vertical; transition: border-color .2s; }
-.quote-form select { appearance: none; background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%); background-position: calc(100% - 10px) 50%, calc(100% - 5px) 50%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; }
+.quote-form input, .quote-form select, .quote-form textarea { width: 100%; min-height: 3.35rem; color: white; background-color: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.32); border-radius: .2rem; outline: 0; padding: .9rem 1rem; text-transform: none; letter-spacing: 0; resize: vertical; transition: border-color .2s, background-color .2s, box-shadow .2s; }
+.quote-form select { appearance: none; padding-right: 2.75rem; background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%); background-position: calc(100% - 19px) 50%, calc(100% - 14px) 50%; background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; }
 .quote-form option { color: var(--ink); }
-.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { border-color: var(--lime); }
+.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { border-color: var(--lime); background-color: rgba(255,255,255,.13); box-shadow: 0 0 0 3px rgba(217,232,140,.16); }
+.quote-form input:hover, .quote-form select:hover, .quote-form textarea:hover { border-color: rgba(255,255,255,.56); }
+.quote-form input[type="date"] { color-scheme: dark; }
+.quote-form input:-webkit-autofill { -webkit-text-fill-color: white; -webkit-box-shadow: 0 0 0 1000px #77402d inset; }
 .quote-form textarea::placeholder { color: rgba(255,255,255,.4); }
 .button-copper { width: 100%; margin-top: 1rem; color: var(--ink); background: var(--lime); border-color: var(--lime); }
 .button-copper:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
