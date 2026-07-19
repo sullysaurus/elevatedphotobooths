@@ -92,7 +92,7 @@ h1 em, h2 em { color: var(--copper); font-weight: 400; }
 .booth-card:nth-child(3) img { object-position: 50% 43%; }
 .booth-card:nth-child(4) img { object-position: 50% 46%; }
 .booth-card:hover .booth-image img { transform: scale(1.035); }
-.booth-card-featured { margin-top: 4rem; }
+.booth-card-featured { margin-top: 0; }
 .pill, .price-badge { position: absolute; z-index: 2; left: 1rem; top: 1rem; padding: .55rem .8rem; background: var(--lime); text-transform: uppercase; letter-spacing: .13em; font-size: .58rem; font-weight: 600; }
 .price-badge { width: 5.5rem; height: 5.5rem; display: grid; place-content: center; text-align: center; border-radius: 50%; font: 500 1.5rem var(--display); letter-spacing: 0; transform: rotate(-8deg); }
 .price-badge small { display: block; font: 600 .5rem var(--body); letter-spacing: .12em; text-transform: uppercase; }
